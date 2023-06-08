@@ -1,0 +1,138 @@
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contact_div {
+        width: 600px;
+        height: 80%;
+        // background-color: blue;
+        font-family: sans-serif;
+
+        h1 {
+            font-size: 40px;
+            color: #0d3b56;
+        }
+
+        .contact_div1 {
+            margin-top: 30px;
+
+            p {
+                line-height: 25px;
+            }
+        }
+
+        .contact_footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: fit-content;
+            // background-color: green;
+            font-family: sans-serif;
+            margin-top: 30px;
+
+            div {
+                width: 48%;
+                // background-color: dodgerblue;
+            }
+
+            .contact_footer_btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 90px;
+
+                h2 {
+                    font-size: 15px;
+                    color: #0d3b56;
+                }
+
+                div {
+                    width: 100%;
+                    height: 60px;
+                    // background-color: aqua;
+                    border-radius: 50px;
+                    overflow: hidden;
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        background-color: #0D3B56;
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+            }
+
+            .contact_footer_div2 {
+                // background-color: darkcyan;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #0D3B56;
+
+                h3 {
+                    font-size: 15px;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:390px) {
+    .contact {
+        width: 100%;
+        // background: red;
+        height: fit-content;
+        padding: 10px 20px 50px 20px;
+
+        .contact_div {
+            h1 {
+                font-size: 25px;
+            }
+
+            .contact_div1 {
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            .contact_footer {
+                // background-color: blue;
+                flex-direction: column;
+                align-items: center;
+
+                .contact_footer_btn {
+                    // background-color: dodgerblue;
+                    width: 100%;
+                    align-items: center;
+
+                    div {
+                        width: 90%;
+                        height: 50px;
+
+                        button {
+                            font-size: 19px;
+                        }
+                    }
+                }
+
+                .contact_footer_div2 {
+                    width: 100%;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    h1 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

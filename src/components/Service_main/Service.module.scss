@@ -1,0 +1,118 @@
+.service {
+    width: 100%;
+    height: 160vh;
+    background-color: #F6F7F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: sans-serif;
+
+    .service_div {
+        height: fit-content;
+        background-color: #F6F7F8;
+        width: 500px;
+        padding: 20px 0 20px 0;
+
+        h1 {
+            font-size: 40px;
+            font-family: sans-serif;
+
+        }
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+
+    .service_div_divs {
+        background-color: #fff;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        hr {
+            border: 1px solid #F6F7F8;
+            // width: 12130px;
+        }
+
+
+        div {
+            width: 100%;
+            height: 250px;
+            padding: 30px;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+
+
+            p {
+                color: #0D4A76;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0D3B7C;
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:390px) {
+    .service {
+        width: 100%;
+        // height: 0;
+        // background-color: red;
+        padding: 0 20px 0 20px;
+        height: fit-content;
+
+        .service_div {
+            // background-color: blue;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+                padding-left: 10px;
+            }
+        }
+
+        .service_div_divs {
+            margin-top: 40px;
+            // background-color: green;
+            height: 100%;
+
+            .resources {
+                // background-color: dodgerblue;
+                height: fit-content;
+            }
+
+            .education {
+                height: fit-content;
+            }
+
+            .business {
+                height: fit-content;
+            }
+
+            .regional {
+                height: fit-content;
+            }
+        }
+    }
+}
