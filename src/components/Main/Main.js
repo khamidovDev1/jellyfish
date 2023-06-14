@@ -1,15 +1,16 @@
 import React from 'react'
 import style from "./Main.module.scss"
+import { useTranslation } from 'react-i18next'
 
 function Main() {
+    const { t } = useTranslation()
+
     return (
         <div className={style.main}>
             <div className="">
-                <h1>Our vision statement</h1>
+                <h1>{t("Our vision statement")}</h1>
                 <p>
-                    We believe that breakthrouths come either
-                    from new knowledge or new experiences.
-                    At Jellyfish, we strive to broaden your viewpoint.
+                    {t("We believe that breakthrouths come either from new knowledge or new experiences.At Jellyfish, we strive to broaden your viewpoint.")}
                 </p>
 
             </div>

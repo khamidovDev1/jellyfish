@@ -4,14 +4,18 @@ import logo from "../../images/logo.png"
 import { FiChevronRight } from "react-icons/fi"
 import { FaBars } from "react-icons/fa"
 import { AiOutlinePlus } from "react-icons/ai"
+import Language from '../../language/Language'
+import { useTranslation } from 'react-i18next'
 
 function Sitebar() {
+    const { t } = useTranslation()
+
+
     const [getOpen, setOpen] = useState(false)
-
-
     const showNav = () => {
         setOpen(!getOpen)
     }
+
     return (
         <div className={style.sitebar}>
             <div className={style.sitebar_div}>
@@ -19,16 +23,16 @@ function Sitebar() {
                     <a href="/"><img src={logo} /></a>
                 </div>
                 <ul>
-                    <li><a href="#misson">About JELLYFISH</a></li>
-                    <li><a href="/">Company</a></li>
-                    <li><a href="#service">Service</a></li>
+                    <li><a href="#misson">{t("About JELLYFISH")}</a></li>
+                    <li><a href="/">{t("Company")}</a></li>
+                    <li><a href="#service">{t("Service")}</a></li>
                 </ul>
                 <div className={style.btns}>
-                    <button><a href="">Recruit<FiChevronRight /></a></button>
-                    <button><a href="">Contact<FiChevronRight /></a></button>
+                    <button><a href="">{t("Recruit")}<FiChevronRight /></a></button>
+                    <button><a href="">{t("Contact")}<FiChevronRight /></a></button>
                 </div>
                 <div className={style.lenguage}>
-                    <h1>Eng</h1>
+                    <h1><Language /></h1>
                 </div>
             </div>
             <div className={style.bars}>
@@ -38,10 +42,10 @@ function Sitebar() {
                     getOpen && (
                         <div className={style.bars_menu}>
                             <ul>
-                                <li><a href="/">About JELLYFISH</a><span><AiOutlinePlus onClick={showNav} className={style.sitebar_bars} /></span></li>
-                                <li><a href="/">Company</a></li>
-                                <li><a href="/">Service</a></li>
-                                <h1><a href="/">Eng</a></h1>
+                                <li><a href="/">{t("About JELLYFISH")}</a><span><AiOutlinePlus onClick={showNav} className={style.sitebar_bars} /></span></li>
+                                <li><a href="/">{t("Company")}</a></li>
+                                <li><a href="/">{t("Service")}</a></li>
+                                <Language />
                             </ul>
                         </div>
                     )

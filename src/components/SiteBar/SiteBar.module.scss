@@ -71,6 +71,11 @@
                 font-weight: 700;
             }
 
+            button:nth-child(1) {
+                width: fit-content;
+                min-width: 120px;
+            }
+
             button {
                 width: 120px;
                 height: 30px;
@@ -226,7 +231,7 @@
             .btns {
                 flex-direction: row-reverse;
                 // background-color: blue;
-                width: 55%;
+                width: fit-content;
                 height: 100%;
                 justify-content: space-between;
                 align-items: center;
@@ -237,6 +242,10 @@
 
                 button:nth-child(2) a {
                     font-size: 13px;
+                }
+
+                button:nth-child(1) {
+                    width: fit-content;
                 }
 
                 button {
